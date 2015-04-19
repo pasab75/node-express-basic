@@ -1,0 +1,9 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    h1.myclass.another-class Hello #{title}
+    h2#header-2 Here is Header 2
+    p(style='color: red;', data-id='#{title}') Paragraph content
