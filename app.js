@@ -9,5 +9,6 @@ app.get('/', function(req, res){
     res.render('index', {title : 'My Page'});
 });
 
-app.listen(3000);
-console.log('Server Listening at 127.0.0.1:3000');
+var port = process.env.PORT || 3000;
+app.listen(port);
+console.log('Server Listening at port' + port);
